@@ -1,0 +1,74 @@
+@import "tailwindcss";
+/* variables */
+:root {
+  --primary-color: #43b1d2;
+
+  /* Background-Color */
+  --bg-color: #181e2a;
+}
+@layer {
+  .container {
+    @apply px-[30px] mx-auto;
+  }
+  .element-center {
+    @apply flex items-center justify-center;
+  }
+  .button-shape {
+    @apply bg-[#42b0d1] hover:bg-[#8cdae4] transition-all duration-200;
+  }
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: var(--bg-color);
+}
+.btn-animation:hover {
+  animation: up-down 2s ease-in-out infinite;
+  -webkit-animation: up-down 2s ease-in-out infinite;
+}
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    -webkit-transform: translateY(0px) scale(1);
+    -moz-transform: translateY(0px) scale(1);
+    -ms-transform: translateY(0px) scale(1);
+    -o-transform: translateY(0px) scale(1);
+  }
+  25%,
+  75% {
+    transform: translateY(5px) scale(1.05);
+    -webkit-transform: translateY(5px) scale(1.05);
+    -moz-transform: translateY(5px) scale(1.05);
+    -ms-transform: translateY(5px) scale(1.05);
+    -o-transform: translateY(5px) scale(1.05);
+  }
+  50% {
+    transform: translateY(-5px) scale(0.95);
+    -webkit-transform: translateY(-5px) scale(0.95);
+    -moz-transform: translateY(-5px) scale(0.95);
+    -ms-transform: translateY(-5px) scale(0.95);
+    -o-transform: translateY(-5px) scale(0.95);
+  }
+}
+#bottom-link {
+  animation: right-left 0.8s ease-in-out infinite;
+  -webkit-animation: right-left 0.8s ease-in-out infinite;
+}
+@keyframes right-left {
+  0%,
+  100% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+  }
+}

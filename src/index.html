@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Tailwind Css</title>
+  </head>
+  <body>
+    <header
+      class="header pt-[60px] fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    >
+      <div
+        class="container flex justify-between items-center flex-col sm:flex-row gap-[30px] sm:gap-0 px-[60px]"
+      >
+        <div class="img-holder">
+          <a href="#"> <img src="./images/logo.svg" alt="" /></a>
+        </div>
+        <nav class="links-holder text-gray-300">
+          <ul class="flex items-center gap-[50px]">
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition duration-100"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition duration-100"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline transition duration-100"
+                >Sign in</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="landing-page bg-[#1c2230]">
+      <div class="container">
+        <div class="element-center flex-col pt-[200px]">
+          <div class="w-[750px] max-w-full">
+            <img
+              src="./images/illustration-intro.png"
+              alt="landing-img"
+              class="w-full h-fit"
+            />
+          </div>
+          <div class="content text-white text-center">
+            <h1 class="text-[30px] md:text-[40px] font-semibold mb-3.5">
+              All your files in one secure location,<br />
+              accessible anywhere.
+            </h1>
+            <p
+              class="font-normal text-lg px-[15px] md:w-[600px] max-w-full md:mx-auto"
+            >
+              Fylo stores all your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
+            </p>
+            <button
+              class="button-shape w-[280px] h-[60px] my-[30px] rounded-4xl cursor-pointer font-medium btn-animation"
+            >
+              <a href="#">Get Started</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[200px]">
+        <img
+          src="./images/bg-curvy-desktop.svg"
+          alt="img"
+          class="w-full h-full"
+        />
+      </div>
+    </section>
+    <section class="features text-white my-[24px] md:my-[40px]">
+      <div class="container">
+        <div
+          class="features-father grid frid-cols-1 md:grid-cols-2 gap-[100px] w-[865px] mx-auto max-w-full"
+        >
+          <div class="feature-box element-center flex-col text-center">
+            <img
+              src="./images/icon-access-anywhere.svg"
+              alt=""
+              class="w-[80px] h-[80px] object-contain"
+            />
+            <h3 class="title text-xl font-semibold my-[15px]">
+              Access your files, anywhere
+            </h3>
+            <p class="desc font-normal text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis cumque at nostrum.
+            </p>
+          </div>
+          <div class="feature-box element-center flex-col text-center">
+            <img
+              src="./images/icon-security.svg"
+              alt=""
+              class="w-[80px] h-[80px] object-contain"
+            />
+            <h3 class="title text-xl font-semibold my-[15px]">
+              Security you can trust
+            </h3>
+            <p class="desc font-normal text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis cumque at nostrum.
+            </p>
+          </div>
+          <div class="feature-box element-center flex-col text-center">
+            <img
+              src="./images/icon-collaboration.svg"
+              alt=""
+              class="w-[80px] h-[80px] object-contain"
+            />
+            <h3 class="title text-xl font-semibold my-[15px]">
+              Real-time collaboration
+            </h3>
+            <p class="desc font-normal text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis cumque at nostrum.
+            </p>
+          </div>
+          <div class="feature-box element-center flex-col text-center">
+            <img
+              src="./images/icon-any-file.svg"
+              alt=""
+              class="w-[80px] h-[80px] object-contain"
+            />
+            <h3 class="title text-xl font-semibold my-[15px]">
+              Store any type of file
+            </h3>
+            <p class="desc font-normal text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis cumque at nostrum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stay-pro my-[80px]">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center"
+      >
+        <div class="left-side text-white">
+          <img
+            src="./images/illustration-stay-productive.png"
+            alt="img-stay-productive"
+          />
+        </div>
+        <div class="right-side text-white">
+          <h3 class="font-medium text-[35px] leading-[50px]">
+            Stay productive,<br />
+            wherever you are
+          </h3>
+          <div class="paragraphs my-[15px] font-normal text-sm tracking-[.8px]">
+            <p class="mb-[15px]">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="mb-[15px]">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="text-[#67dbda] hover:text-[#43b1d2] flex items-center w-fit gap-[15px] font-semibold transition-all duration-200 border-b-2 border-[#67dbda] pb-1.5"
+            >See how Fylo works
+            <img
+              src="./images/icon-arrow.svg"
+              id="bottom-link"
+              alt="arrow"
+              class="w-[20px] h-[20px] object-contain"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials my-[80px] pb-[250px] text-white">
+      <div class="container relative">
+        <div class="absolute left-[20px] top-[-35px] z-[-1]">
+          <img src="./images/bg-quotes.png" alt="quotes" />
+        </div>
+        <div
+          class="boxs grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px]"
+        >
+          <div
+            class="box bg-[#21293c] rounded-[6px] p-[30px] shadow-[8px_8px_1px_8px_#1c202c]"
+          >
+            <p class="desc text-sm font-normal tracking-[.8px] mb-[30px]">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="info flex gap-[20px] items-center">
+              <img
+                src="./images/profile-1.jpg"
+                alt="profile-1"
+                class="w-[50px] h-[50px] rounded-full object-contain"
+              />
+              <div>
+                <strong class="block mb-[5px]">Satish Patel</strong>
+                <p class="font-normal text-sm">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="box bg-[#21293c] rounded-[6px] p-[30px] shadow-[8px_8px_1px_8px_#1c202c]"
+          >
+            <p class="desc text-sm font-normal tracking-[.8px] mb-[30px]">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="info flex gap-[20px] items-center">
+              <img
+                src="./images/profile-2.jpg"
+                alt="profile-1"
+                class="w-[50px] h-[50px] rounded-full object-contain"
+              />
+              <div>
+                <strong class="block mb-[5px]">Bruce McKenzie</strong>
+                <p class="font-normal text-sm">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box bg-[#21293c] rounded-[6px] p-[30px] shadow-[8px_8px_1px_8px_#1c202c]"
+          >
+            <p class="desc text-sm font-normal tracking-[.8px] mb-[30px]">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="info flex gap-[20px] items-center">
+              <img
+                src="./images/profile-3.jpg"
+                alt="profile-1"
+                class="w-[50px] h-[50px] rounded-full object-contain"
+              />
+              <div>
+                <strong class="block mb-[5px]">Iva Boyd</strong>
+                <p class="font-normal text-sm">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="get-started my-[80px] text-white">
+      <div class="container">
+        <div class="relative">
+          <div
+            class="box bg-[#1c2230] absolute w-[865px] max-w-full min-h-[275px] left-[50%] translate-[-50%] top-[70px] p-[30px] rounded-[6px] element-center flex-col"
+          >
+            <h3 class="text-[26px] md:text-[36px] font-semibold mb-[15px]">
+              Get early access today
+            </h3>
+            <p class="w-[620px] max-w-full mx-auto mb-[30px]">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+            <form
+              class="w-full flex justify-between items-center flex-wrap md:px-[60px] gap-[30px]"
+            >
+              <input
+                type="email"
+                placeholder="email@example.com"
+                class="w-full md:flex-1 h-[50px] rounded-[30px] pl-[30px] outline-none border-none text-sm text-black font-medium bg-white"
+              />
+              <button
+                type="submit"
+                class="w-full md:w-[200px] h-[50px] cursor-pointer bg-[#42b0d1] hover:bg-[#8cdae4] transition-all duration-200 rounded-[30px]"
+              >
+                Get Started For Free
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="footer text-white bg-[#0c1524] pt-[320px] md:pt-[200px] pb-[100px]"
+    >
+      <div class="container">
+        <a href="#">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            class="w-[175px] h-[66px] object-contain md:mt-[40px]"
+          />
+        </a>
+        <div
+          class="mt-[30px] flex justify-between flex-wrap flex-col md:flex-row gap-[30px]"
+        >
+          <div class="flex items-start gap-[15px] w-[340px] max-w-full">
+            <img
+              src="./images/icon-location.svg"
+              alt="location"
+              class="w-[18px] h-[18px] object-contain"
+            />
+            <p class="desc font-normal text-sm tracking-[.8px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="contact">
+            <div
+              class="father flex items-center gap-[15px] mb-[15px] last-of-type:mb-[0]"
+            >
+              <img
+                src="./images/icon-phone.svg"
+                alt="phone"
+                class="w-[18px] h-[18px] object-contain"
+              />
+              <p>+20-000-000-0000</p>
+            </div>
+            <div class="father flex items-center gap-[15px]">
+              <img
+                src="./images/icon-email.svg"
+                alt="email"
+                class="w-[18px] h-[18px] object-contain"
+              />
+              <p>email@example.com</p>
+            </div>
+          </div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >Jobs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >Press</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >Terms</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[#8CDAE4] transition-all duration-200 text-base"
+                >Privacy</a
+              >
+            </li>
+          </ul>
+          <div
+            class="social-icons flex gap-[15px] w-full justify-center md:w-auto"
+          >
+            <a href="#" class="group"
+              ><i
+                class="fa-brands fa-facebook w-[40px] h-[40px] element-center group-hover:text-[#8CDAE4]"
+              ></i
+            ></a>
+            <a href="#" class="group"
+              ><i
+                class="fa-brands fa-twitter w-[40px] h-[40px] element-center group-hover:text-[#8CDAE4]"
+              ></i
+            ></a>
+            <a href="#" class="group"
+              ><i
+                class="fa-brands fa-instagram w-[40px] h-[40px] element-center group-hover:text-[#8CDAE4]"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
